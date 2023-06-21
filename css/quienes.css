@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap');
+body {
+  margin: 0 auto;
+  padding: 0;
+  font-family: 'Roboto Slab';
+  width: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0;
+  border: none;
+  overflow-x: hidden;
+  
+ 
+}
+/* Cabezera*/
+
+header{
+  background-color:black ;
+  width: 100%;
+  height: 120px;
+  left: 0; /* Posicionamos la cabecera al lado izquierdo */
+  top: 0; /* Posicionamos la cabecera pegada arriba */
+  position: fixed; /* Hacemos que la cabecera tenga una posición fija */
+  opacity: 70%;
+}
+
+/*
+@media screen and (max-width:1000px) {
+header{
+  display: flex;
+}
+.menu{
+  position: fixed;
+  transition: all 0.2s linear;
+  z-index: 100;
+  flex-direction: column;
+}
+
+.link-item{
+margin-top: 2rem;
+text-decoration: none;
+font-weight: bold;
+position: relative;
+}
+
+.button-menu {
+  z-index: 200;
+  width: 40px;
+  height: 40px;
+  border: none;
+  display: flex;
+  background: none;
+  flex-direction: column; Pondrá un span debajo del otro
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.button-menu span {
+  width: 37px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  border-radius: 3px;
+  transform-origin: 4px 0px;
+  transition: all 0.2s linear;
+}
+
+.button-menu.close span {
+  opacity: 1;
+  transform: rotate(45deg) translate(0px, 0px);
+  background: #ffffff;
+}
+
+.button-menu.close span:nth-child(2) {
+  transform: rotate(-45deg) translate(-8px, 5px);
+}
+
+.button-menu.close span:nth-child(3) {
+  display: none;
+}
+}
+*/
+/*Encabezado img*/
+
+.encabezado{
+  width: 30%;
+  height: auto;
+  float: left;
+}
+
+/*Imagen encabezado*/
+#encabezado{
+  width: 9em;
+  height: auto;
+  padding-left: 20%;
+  padding-top: 1.5%;
+}
+
+
+/*Menu*/
+
+.menu{
+  width: 50%;
+  float: right;
+  color: white;
+  font-size: 20px;
+}
+
+
+/*Opciones header*/
+
+nav{
+  list-style: none;
+  color: black;
+  text-align: center;
+  width: 30%;
+  height: auto;
+  float: right;
+  
+  
+}
+
+nav ul{
+  list-style: none;
+}
+
+nav ul li{
+  display: inline-block;
+  font-family: 'cursive';
+  margin-right: 1%;
+  padding: 2%;
+  border-radius: 5%;
+}
+
+nav ul li #Inicio{
+border-bottom: solid white 2px;
+}
+
+#Inicio :hover{
+  border-bottom: solid black 2px;
+}
+
+/*Enlaces*/
+nav a:link{
+  color: white;
+  text-decoration: none;
+}
+
+nav a:visited{
+  color: white;
+}
+
+nav a:hover{
+  background-color: white;
+  color: black;
+  border-radius: 5%;
+  padding: 10px 20px;
+}
+
+/*Div1*/
+.fotocabezera{
+  width: 100%;
+  height: 30em;
+  background-image: url(img2/header2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  margin-top: 119px;
+}
+
+.fotocabezera h1{
+  color: black;
+}
+
+
+/*Section1*/
+.section1{
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  
+}
+
+.section1 #logo2{
+  width: 80%;
+  height: auto;
+  margin-left: 8%;
+  margin-top: 2%;
+}
+
+
+.section1 #pladur{
+  width: 45%;
+  height: auto;
+  margin-left: 1%;
+  margin-top: 1%;
+}
+
+.section1 #pladur2{
+  width: 35%;
+  height: auto;
+  margin-left: 2%;
+}
+
+
+
+@media screen and (max-width:1000px){
+  .section1{
+    flex-direction: column;
+  }
+}
+
+/*Section2*/
+
+.section2{
+  width: 95%;
+  height: auto;
+  display: flex;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section2 .img2{
+  display: flex;
+  padding: 1%;
+}
+
+.section2 img{
+  padding: 1%;
+}
+
+.texto2{
+  padding: 1%;
+}
+
+
+@media screen and (max-width:1000px){
+  .section2{
+    flex-direction: column-reverse;
+  }
+  .section2 .img2{
+    flex-direction: column;
+  }
+}
+
+/*Section3*/
+
+.section3{
+  width: 100%;
+  text-align: center;
+  border-top: 2px black solid;
+  border-bottom: 2px black solid;
+}
+
+.section3 h1{
+  width: 100%;
+  text-align: center;
+}
+
+.section3 p{
+  margin-bottom: 2%;
+  padding-left: 20%;
+  padding-right: 20%;
+  text-align: left;
+}
+
+.section3 img{
+  width: 90%;
+}
+
+@media screen and (max-width:1000px){
+  .section3{
+    padding: 0;
+  }
+}
+
+/*Section4*/
+
+.section4{
+  width: 90%;
+  display: flex;
+  border: none;
+  margin: 0 auto;
+  
+}
+
+.section4 article{
+  flex-wrap: wrap;
+  padding: 1%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.section4 img{
+  border-radius: 5%;
+}
+
+@media screen and (max-width:1000px){
+  .section4{
+    flex-direction: column;
+  }
+
+  .section4 img{
+    width: 90%;
+  }
+}
+/*Footer*/
+
+footer{
+  background-color: black;
+  color: white;
+  width: 100%;
+  height: auto;
+  overflow-x: hidden;
+  opacity: 85%;
+  font-size: 15px;
+}
+
+/*Footer arriba*/
+
+.footerarriba{
+  background-color: white;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  color: black;
+  display: flex;
+  padding-bottom: 2%;
+}
+
+.footerarriba article{
+  width: 25%;
+  height: auto;
+  float: left;
+  text-align: center;
+}
+
+@media screen and (max-width:600px){
+  .footerarriba{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footerarriba article{
+    width: 60%;
+  }
+}
+/* Imagenes footer */
+
+footer img{
+  width: 20%;
+  border-radius: 50%;
+  margin-top: 10%;
+}
+
+footer h1{
+  font-family: 'calibri';
+}
+
+#instagram{
+  width: 20%;
+}
+
+#ubicacion{
+  width: 20%;
+}
+
+#Contacto{
+  width: 20%;
+}
+
+
+/*Footer Abajo*/
+
+.footerabajo{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap
+}
+
+.footer1{
+  width: 100%;
+  height: auto;
+  display: flex;
+  font-size: 14px;
+  
+  
+}
+footer .footerabajo .footer1 article{
+display: inline-block;
+width: 30em;
+font-size: 16px;
+/* ajusta la medida a tu preferencia */
+box-sizing: border-box;
+/* para dar un espacio entre los elementos */
+vertical-align: top;
+padding: 0.5%;
+}
+
+footer .footerabajo .footer1 article h2{
+  text-align: center;
+   border-top: solid white 2px;
+  border-bottom: solid white 2px;
+}
+
+
+.footer1 ul li{
+  font-size: 17px;
+  list-style: none;
+}
+
+.footer1 a:link{
+  color: white;
+  text-decoration: none;
+}
+
+footer .footerabajo .footer1 article a:visited{
+  color: white;
+}
+
+
+.footer2{
+  width: 100%;
+  height: auto;
+  text-align: center;
+  margin-top: 4%;
+}
+
+@media screen and (max-width:700px){
+  .footerabajo .footer1{
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    display: contents;
+  }
+}
